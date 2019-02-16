@@ -1,4 +1,90 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
+  display: block;
   font-size: 10px;
 }
+
+.container {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding-top: 8%;
+  max-width: 1024px;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 0 0 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.preview {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 300px;
+  width: auto;
+  margin: 0 0 15px 0;
+}
+
+.preview h1 {
+  font-size: 24px;
+  font-family: serif;
+  padding: 40px;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+.baku {
+   background-image: url(../images/baku.jpg);
+}
+
+.london {
+   background-image: url(../images/london.png);
+ }
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    padding-top: 5%;
+    width: 80%;
+  }
+
+  .preview {
+    display: inline-block;
+    float: right;
+    margin: 1%;
+    width: 48%;
+    height: 250px;
+}
+
+@media screen and (min-width: 991px) {
+  .preview {
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    width: 23%;
+}
+
+  .preview h1 {
+    font-size: 24px;
+    font-family: serif;
+    padding: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0;
+  }
